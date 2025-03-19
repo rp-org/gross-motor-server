@@ -195,6 +195,8 @@ def predict_video(video_path, expected_action):
             # extract angles
             if landmarks:
               left_angle, right_angle = extract_angles(frame, landmarks)
+            else: 
+              left_angle, right_angle = 0, 0
 
         print("RIGHT ANGLE: ", right_angle, " LEFT ANGLE: ", left_angle)
         
