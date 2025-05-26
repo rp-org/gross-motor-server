@@ -48,4 +48,4 @@ async def gross_assess_endpoint(file: UploadFile = File(...), action: str = Form
 # test api
 @app.get("/")
 def read_root():
-    return {"message": "Hello, World!"}
+    return {"message": "Server Online!"}
