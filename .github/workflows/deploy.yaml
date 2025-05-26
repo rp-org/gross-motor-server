@@ -15,7 +15,7 @@ on:
         type: string
       branch:
         required: false
-        default: develop
+        default: main
         type: string
       service_name:
         required: true

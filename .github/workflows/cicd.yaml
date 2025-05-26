@@ -2,7 +2,7 @@ name: "CI CD Workflow"
 
 on:
   push:
-    branches: [develop]
+    branches: [main]
 
 permissions:
   contents: write
@@ -33,9 +33,9 @@ jobs:
     needs: snyk-scan
     uses: ./.github/workflows/deploy.yaml
     with:
-      target_directory: "/home/MUmaira/gross-motor-server"
-      branch: "develop"
-      service_name: "test-sp-app.service"
+      target_directory: "/home/moshdev2213/gross-motor-server"
+      branch: "main"
+      service_name: "gross-motor-server.service"
     secrets:
       SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       VM_USER: ${{ secrets.VM_USER }}
