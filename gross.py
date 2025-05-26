@@ -54,6 +54,7 @@ def predict_action(video_path):
     predicted_action = actions[np.argmax(prediction)]           
 
     print(f"\nPredicted Action: {predicted_action}")
+    print(f"\nPrediction Score: {prediction}")
 
     return predicted_action
 
