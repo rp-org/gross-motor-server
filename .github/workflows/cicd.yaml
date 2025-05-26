@@ -33,7 +33,7 @@ jobs:
     needs: snyk-scan
     uses: ./.github/workflows/deploy.yaml
     with:
-      target_directory: "/home/MUmaira/fine-motor-server"
+      target_directory: "/home/MUmaira/gross-motor-server"
       branch: "develop"
       service_name: "test-sp-app.service"
     secrets:
